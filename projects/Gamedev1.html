@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yvosh Caila Martin - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#178BAB',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Modal fade-in and fade-out animations */
+    .modal-enter {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    .modal-enter-active {
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .modal-leave {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .modal-leave-active {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Image animation */
+    .image-enter {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    .image-enter-active {
+      opacity: 1;
+      transform: scale(1);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-50">
+    <h1 class="text-xl font-bold">Yvosh Caila Martin</h1>
+    <nav class="space-x-6">
+        <a href="../About.html" class="flex items-center gap-1 hover:text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75L12 3l9 6.75V21a.75.75 0 01-.75.75H3.75A.75.75 0 013 21V9.75z" />
+            </svg>
+            Home
+          </a>    </nav>    
+  </header>
+
+  <!-- Main Body -->
+  <main class="flex-grow flex flex-col gap-10 p-6 lg:p-12">
+
+    <!-- First Box -->
+    <section class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col lg:flex-row w-full">
+      <!-- Image Left -->
+      <div class="lg:w-1/2">
+        <video autoplay muted loop class="w-full h-full object-cover">
+          <source src="../images/Gamedev1/1. Start.png type="video/mp4">
+        </video>             
+      </div>
+
+      <!-- Description Right -->
+      <div class="p-6 lg:w-1/2 flex flex-col justify-between">
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Companion App</h2>
+          <p class="text-sm text-gray-600 mb-4">
+            Designed and developed the board game 'Guardian of the Museums,' including creating the rules, game flow, and all assets, such as the board, weapon cards, character cards, place cards, points, and more.          </p>
+        </div>
+        <div>
+          <a href="projects/Coffee Shop.html" target="_blank">
+            <button class="px-4 py-2 bg-primary text-white rounded-full hover:bg-blue-700 transition">
+              Visit Website
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Box (Website Screenshots Below the First Box) -->
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-xl font-semibold mb-4">Game Screenshots (Companion App) </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+  
+        <!-- Group: Product Screens -->
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="../images/Gamedev1/1. Start.png" alt="New Product Basic Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+          <p class="text-sm text-gray-500 text-center">Start</p>
+        </div>
+  
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="../images/Gamedev1/2. About Us.png" alt="New Product Variant Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+          <p class="text-sm text-gray-500 text-center">About Us</p>
+        </div>
+  
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="../images/Gamedev1/3. Rules.png" alt="Product Management" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+          <p class="text-sm text-gray-500 text-center">Rules</p>
+        </div>
+  
+        <div class="bg-white p-4 rounded-xl shadow-md">
+          <img src="../images/Gamedev1/3.1 Rule.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+          <p class="text-sm text-gray-500 text-center">Rules</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/4. Deck_of_Cards.png" alt="New Product Basic Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Deck of Cards</p>
+          </div>
+    
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/4.1 Artifact.png" alt="New Product Variant Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Artifact</p>
+          </div>
+    
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/4.2 Sample_Cards.png" alt="Product Management" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Sample Cards</p>
+          </div>
+    
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/4.3 Garbage.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Garbage</p>
+          </div>
+      </div>
+    </section>
+    <section class="bg-white rounded-xl shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">Game Assets (Board Game) </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+    
+          <!-- Group: Product Screens -->
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Boards and Other Cards/Board.png" alt="New Product Basic Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Board</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Boards and Other Cards/C1. Back Page.png" alt="New Product Variant Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Back Page</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Boards and Other Cards/C1. Accomplice.png" alt="New Product Variant Info" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Front Page (Accomplice Card)</p>
+          </div>
+    
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Boards and Other Cards/C1.1 Visitor.png" alt="Product Management" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Front Page (Visitor)</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Boards and Other Cards/C2. Accomplice (Vote).png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Accomplice (Vote Card)</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Boards and Other Cards/C2.Visitor (Vote).png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Visitor (Vote Card)</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Characters/Curator.png" alt="Product Management" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Curator</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Characters/Helen.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Helen</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Characters/John.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">John</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Place/Art Studio.png" alt="Product Management" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Art Studio</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Place/Store.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Store</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Place/Lobby.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Lobby</p>
+          </div>
+          
+        <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Weapons/Lead Pipe.png" alt="Product Management" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Lead Pipe</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Weapons/Sculpture.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Sculpture</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <img src="../images/Gamedev1/Assets (Cards)/Weapons/Wrench.png" alt="View Product Variants" class="rounded-lg object-cover w-full mb-2 image-thumbnail" />
+            <p class="text-sm text-gray-500 text-center">Wrench</p>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- Modal for viewing images -->
+<div id="imageModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center opacity-0 scale-90 transition-all duration-300 transform hidden">
+    <div class="bg-white p-6 rounded-lg max-w-full max-h-full overflow-auto">
+      <img id="modalImage" src="" alt="Full Size Image" class="max-w-[70vw] max-h-[70vh] object-contain" />
+      <button onclick="closeModal()" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-700">Close</button>
+    </div>
+  </div>
+  
+  <script>
+    // Function to open the modal and display the clicked image
+    function openModal(imageSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImage = document.getElementById('modalImage');
+      
+      modalImage.src = imageSrc;
+      
+      // Remove 'hidden' class to show the modal and apply transition
+      modal.classList.remove('hidden');
+      
+      // Trigger the animation by adding transition classes
+      setTimeout(() => {
+        modal.classList.remove('opacity-0', 'scale-90');
+        modal.classList.add('opacity-100', 'scale-100');
+      }, 10); // Delay to allow the browser to register the changes
+    }
+  
+    // Function to close the modal
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      
+      // Add transition classes for closing animation
+      modal.classList.remove('opacity-100', 'scale-100');
+      modal.classList.add('opacity-0', 'scale-90');
+      
+      // After animation completes, hide the modal
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300); // Match duration of the transition
+    }
+  
+    // Add event listeners to images to trigger the modal
+    const images = document.querySelectorAll('.image-thumbnail');
+    images.forEach(img => {
+      img.addEventListener('click', () => openModal(img.src));
+    });
+  </script>
+  
+
+  <!-- Footer -->
+  <footer class="mt-12 bg-white shadow-inner p-6 flex flex-col sm:flex-row justify-between items-center">
+    <div>
+      <h4 class="font-semibold">My Community</h4>
+      <div class="flex space-x-4 mt-2">
+        <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/facebook.svg" class="w-5 h-5" alt="Facebook" /></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cailayvosh@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/gmail.svg" class="w-5 h-5" alt="Gmail" />
+        </a>
+                <a href="https://www.linkedin.com/in/martin-yvosh-caila-a7354b312" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/linkedin.svg" class="w-5 h-5" alt="LinkedIn" />
+        </a>
+        
+      </div>
+    </div>
+    <p class="text-sm text-gray-600 mt-4 sm:mt-0">
+      For more inquiries, you can email me on: <br />
+      <a href="mailto:cailayvosh@gmail.com" class="text-primary font-medium">cailayvosh@gmail.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
